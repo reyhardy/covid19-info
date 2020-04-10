@@ -47,11 +47,7 @@ export default {
         callApi() {
             axios.get('https://api.apify.com/v2/key-value-stores/6t65lJVfs3d8s6aKc/records/LATEST?disableRedirect=true')
                 .then(response => {
-                    console.log(response.data)
                     this.info = response.data;
-                })
-                .catch(err =>{
-                    console.log(err.data)
                 })
         }
     },
