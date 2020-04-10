@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1 class="title">{{title}}</h1>
+    <display-info />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import DisplayInfo from './components/DisplayInfo.vue'
 
 export default {
   name: 'App',
+  data() {
+    return {
+      title: "Current COVID-19 Information in Malaysia"
+    }
+  },
   components: {
-    HelloWorld
+    // HelloWorld
+    DisplayInfo
   }
 }
 </script>
