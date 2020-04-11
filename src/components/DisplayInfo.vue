@@ -2,41 +2,41 @@
     <div class="display-info box">        
         <h1 class="title">{{title}}</h1>
 
-        <div class="tags has-addons is-centered">
+        <div class="tags is-rounded has-addons is-centered">
             <span class="tag">Last updated</span>
             <span class="tag is-info">{{info.lastUpdatedAtApify | moment("dddd, Do MMMM YYYY, h:mm a")}}</span>
         </div>
         
         <div class="columns is-mobile is-centered">
-            <div class="column is-one-quarter has-background-primary">
+            <div class="column box is-rounded is-one-quarter has-background-primary">
                 Total of positive cases:<br>
                 <strong>{{info.testedPositive}}</strong>
             </div>            
         </div><br>
 
         <div class="columns is-mobile is-centered">
-            <div class="column is-one-quarter has-background-success">
-                Total patients recovered:<br>
+            <div class="column box is-rounded is-one-quarter has-background-success">
+                <span class="content is-large">Total patients recovered:</span><br>
                 <strong>{{info.recovered}}</strong>
             </div>
         </div><br>
 
         <div class="columns is-mobile is-centered">
-            <div class="column is-one-quarter has-background-warning">
+            <div class="column box is-rounded is-one-quarter has-background-warning">
                 Patients treated in ICU:<br>
                 <strong>{{info.inICU}}</strong>
             </div>
         </div><br>
 
         <div class="columns is-mobile is-centered">
-            <div class="column is-one-quarter has-background-danger">
+            <div class="column box is-rounded is-one-quarter has-background-danger">
                 Deaths:<br>
                 <strong>{{info.deceased}}</strong>
             </div>
         </div><br>
 
         <div class="columns is-mobile is-centered">
-            <div class="column is-one-quarter has-background-info">
+            <div class="column box is-rounded is-one-quarter has-background-link">
                 Source:<br>
                 <a :href="info.sourceUrl" target="_blank" class="has-text-black">COVID-19 (Maklumat Terkini)</a>
             </div>
