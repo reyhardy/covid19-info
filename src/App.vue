@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <h1 class="title">{{title}}</h1>
     <display-info />
   </div>
 </template>
@@ -12,7 +11,7 @@ export default {
   name: 'App',
   data() {
     return {
-      title: "Current COVID-19 Information in Malaysia"
+      
     }
   },
   components: {
