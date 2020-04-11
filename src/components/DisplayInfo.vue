@@ -9,7 +9,7 @@
         
         <div class="columns is-mobile is-centered">
             <div class="column box is-rounded is-one-quarter has-background-primary">
-                Total of positive cases:<br>
+                <span class="content is-large">Total of positive cases:</span><br>
                 <strong>{{info.testedPositive}}</strong>
             </div>            
         </div><br>
@@ -23,22 +23,21 @@
 
         <div class="columns is-mobile is-centered">
             <div class="column box is-rounded is-one-quarter has-background-warning">
-                Patients treated in ICU:<br>
+                <span class="content is-large">Patients treated in ICU:</span><br>
                 <strong>{{info.inICU}}</strong>
             </div>
         </div><br>
 
         <div class="columns is-mobile is-centered">
             <div class="column box is-rounded is-one-quarter has-background-danger">
-                Deaths:<br>
+                <span class="content is-large">Deaths:</span><br>
                 <strong>{{info.deceased}}</strong>
             </div>
         </div><br>
 
         <div class="columns is-mobile is-centered">
             <div class="column box is-rounded is-one-quarter has-background-link">
-                Source:<br>
-                <a :href="info.sourceUrl" target="_blank" class="has-text-black">COVID-19 (Maklumat Terkini)</a>
+                <span class="content has-text-white">Source:</span> <a :href="info.sourceUrl" target="_blank" class="has-text-white">COVID-19 (Maklumat Terkini)</a>
             </div>
         </div>
     </div>
